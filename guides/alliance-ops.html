@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kingshot Alliance Daily Ops Checklist</title>
+    <meta
+      name="description"
+      content="A repeat-use Kingshot daily and weekly alliance operations checklist with local browser saving for players and officers."
+    />
+    <link rel="canonical" href="https://www.kingshotcentral.com/guides/alliance-ops.html" />
+    <meta property="og:title" content="Kingshot Alliance Daily Ops Checklist" />
+    <meta property="og:description" content="Use a browser-saved Kingshot alliance checklist for rallies, helps, donations, events, and officer reminders." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.kingshotcentral.com/guides/alliance-ops.html" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oxanium:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2456404542897668"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body data-page="alliance">
+    <div class="page-shell guide-layout">
+      <a class="back-link" href="../index.html" data-i18n="shared.backToHome">Back to Kingshot Central</a>
+      <article class="intro-card">
+        <p class="eyebrow" data-i18n="alliance.introEyebrow">Repeat-use tool</p>
+        <h1 data-i18n="alliance.introTitle">Kingshot alliance daily operations checklist</h1>
+        <p data-i18n="alliance.introBody">
+          This page is designed to be revisited. It saves checkbox state in the browser so a player or officer can use it as a lightweight daily control panel.
+        </p>
+      </article>
+
+      <section class="ad-slot ad-inline" aria-label="Advertisement" data-ad-slot="alliance_inline_top" data-ad-format="auto" hidden>
+        <span class="ad-slot-label" data-i18n="shared.adLabel">Advertisement</span>
+        <div class="ad-slot-inner"></div>
+      </section>
+
+      <div class="split">
+        <article>
+          <h2 data-i18n="alliance.routineTitle">What strong routine usually looks like</h2>
+          <ul>
+            <li data-i18n="alliance.routineItems.0">Queue timers are never left idle for long.</li>
+            <li data-i18n="alliance.routineItems.1">Alliance help, donations, and cooperative tasks are cleared consistently.</li>
+            <li data-i18n="alliance.routineItems.2">Gathering, healing, and training stay aligned with the next scoring window.</li>
+            <li data-i18n="alliance.routineItems.3">Officers remind members before event bursts instead of after missed opportunities.</li>
+          </ul>
+        </article>
+
+        <article class="note-card alliance-officer-note-card">
+          <h2 data-i18n="alliance.retentionTitle">Officer note board</h2>
+          <p data-i18n="alliance.retentionBody">
+            Use this block to keep one short officer reminder in mind: who needs help, which queues must not idle, and whether tomorrow needs rally or scoring prep.
+          </p>
+          <textarea
+            id="officer-note"
+            class="memo-field officer-note-field"
+            placeholder="Example: remind R4 before reset, hold speedups for tomorrow, rally block at 20:00."
+          ></textarea>
+          <span class="memo-status" id="officer-note-status">Saved locally</span>
+        </article>
+      </div>
+
+      <article class="tracker-card" id="tracker">
+        <p class="eyebrow" data-i18n="alliance.trackerEyebrow">Saved locally in your browser</p>
+        <h2 data-i18n="alliance.trackerTitle">Daily and weekly tracker</h2>
+        <p class="tracker-summary" id="tracker-summary">0 of 6 tasks completed</p>
+        <div class="tracker-list" data-tracker="kingshot-daily">
+          <label class="tracker-item">
+            <input type="checkbox" data-item="alliance-help" />
+            <span data-i18n="alliance.trackerItems.0">Use all alliance help and donation opportunities.</span>
+          </label>
+          <label class="tracker-item">
+            <input type="checkbox" data-item="queues" />
+            <span data-i18n="alliance.trackerItems.1">Refresh building, research, training, and healing queues.</span>
+          </label>
+          <label class="tracker-item">
+            <input type="checkbox" data-item="gathering" />
+            <span data-i18n="alliance.trackerItems.2">Send marches to gather with the next event goal in mind.</span>
+          </label>
+          <label class="tracker-item">
+            <input type="checkbox" data-item="stamina" />
+            <span data-i18n="alliance.trackerItems.3">Spend core stamina or energy in a way that supports growth priorities.</span>
+          </label>
+          <label class="tracker-item">
+            <input type="checkbox" data-item="event-prep" />
+            <span data-i18n="alliance.trackerItems.4">Check whether tomorrow needs saved speedups, pulls, or troop prep.</span>
+          </label>
+          <label class="tracker-item">
+            <input type="checkbox" data-item="officer-note" />
+            <span data-i18n="alliance.trackerItems.5">Post one alliance reminder if a scoring window or rally block is coming up.</span>
+          </label>
+        </div>
+        <div class="tracker-actions">
+          <button class="button button-primary" type="button" id="reset-tracker" data-i18n="alliance.trackerReset">Reset checklist</button>
+          <span class="tracker-feedback" id="tracker-feedback" aria-live="polite"></span>
+        </div>
+      </article>
+
+      <section class="ad-slot ad-multiplex" aria-label="Advertisement" data-ad-slot="alliance_multiplex_bottom" data-ad-format="autorelaxed" hidden>
+        <span class="ad-slot-label" data-i18n="alliance.bottomAdLabel">Sponsored</span>
+        <div class="ad-slot-inner"></div>
+      </section>
+    </div>
+    <script src="../site-config.js"></script>
+    <script src="../i18n.js"></script>
+    <script src="../tracker.js"></script>
+    <script src="../ads-config.js"></script>
+    <script src="../ads.js"></script>
+    <script src="../site-schema.js"></script>
+    <script src="../site-footer.js"></script>
+  </body>
+</html>

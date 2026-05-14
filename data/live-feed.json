@@ -1,0 +1,118 @@
+{
+  "updated_at": "2026-05-14T03:44:52.764Z",
+  "updated_display": {
+    "global": "May 14, 2026, 03:44 UTC",
+    "cn": "2026年5月14日 11:44（北京时间）",
+    "tw": "2026年5月14日 11:44（台北时间）",
+    "jp": "2026年5月14日 12:44 JST",
+    "kr": "2026년 5월 14일 12:44 KST",
+    "de": "14. Mai 2026, 05:44 CEST",
+    "fr": "14 mai 2026, 05:44 CEST",
+    "latam": "13 de may de 2026, 22:44 UTC-5",
+    "br": "14 de mai. de 2026, 00:44 BRT",
+    "ru": "14 мая 2026 г., 06:44 MSK",
+    "th": "14 พ.ค. 2569 10:44 ICT"
+  },
+  "updated_status": {
+    "global": "Auto-updated from tracked sources",
+    "cn": "已从追踪源自动更新",
+    "tw": "已從追蹤源自動更新",
+    "jp": "追跡ソースから自動更新",
+    "kr": "추적 소스에서 자동 갱신",
+    "de": "Automatisch aus verfolgten Quellen aktualisiert",
+    "fr": "Mise a jour automatique depuis les sources suivies",
+    "latam": "Actualizado automaticamente desde fuentes seguidas",
+    "br": "Atualizado automaticamente a partir das fontes monitoradas",
+    "ru": "Автообновление из отслеживаемых источников",
+    "th": "อัปเดตอัตโนมัติจากแหล่งที่ติดตาม"
+  },
+  "market_label": {
+    "global": "Global",
+    "cn": "中国大陆观察区",
+    "tw": "繁中观察区",
+    "jp": "Japan",
+    "kr": "Korea",
+    "de": "Germany",
+    "fr": "France",
+    "latam": "LATAM",
+    "br": "Brazil",
+    "ru": "Russia",
+    "th": "Thailand"
+  },
+  "server_reset_utc_hour": 0,
+  "focus_items": [
+    {
+      "title": "Check latest redeem codes first",
+      "detail": "Codes expire fast and are one of the most valuable low-effort wins for daily visitors."
+    },
+    {
+      "title": "Save gems for hero-focused events",
+      "detail": "Hall of Heroes and Hero Roulette style windows are where disciplined players create the most value."
+    },
+    {
+      "title": "Push only the next meaningful building chain",
+      "detail": "Do not scatter upgrades. Build toward your next real unlock or event breakpoint."
+    }
+  ],
+  "official_updates": [
+    {
+      "date": "2026-05-14",
+      "title": "App Store still shows version 1.10.7",
+      "summary": "Master System added in version 1.10.7 March Skin system expanded to 6 skins Official app store listing still receives fresh content updates",
+      "source_label": "Kingshot Apple App Store",
+      "source_url": "https://apps.apple.com/us/app/kingshot/id6739554056"
+    },
+    {
+      "date": "2026-05-14",
+      "title": "4 code entries still appear in the tracked source",
+      "summary": "VIP777 is the strongest current first-check candidate. Keep retest tags on newer or ambiguous entries.",
+      "source_label": "Kingshot.net gift-code tracker",
+      "source_url": "https://www.kingshot.net/gift-codes"
+    }
+  ],
+  "practical_notes": [
+    "Keep code-board status honest: confirmed live, retest first, or stale tracker residue.",
+    "If tomorrow could be a scoring window, stop burning speedups late tonight.",
+    "Use one memo line for furnace target, event plan, and alliance reminder."
+  ],
+  "regions": {
+    "global": {
+      "scope": "Global official watch and tracked code feed",
+      "focus_items": [
+        {
+          "title": "Check the current code board before reset",
+          "detail": "VIP777 is the newest surfaced code signal. Open the code board first before spending time anywhere else."
+        },
+        {
+          "title": "Decide whether today is a hold day or spend day",
+          "detail": "If no strong event overlap is active, holding gems and speedups is still the safer default for mature accounts."
+        },
+        {
+          "title": "Write down the next hard account gate",
+          "detail": "Use the local memo for your furnace target, next event, and one alliance reminder."
+        }
+      ],
+      "official_updates": [
+        {
+          "date": "2026-05-14",
+          "title": "App Store still shows version 1.10.7",
+          "summary": "Master System added in version 1.10.7 March Skin system expanded to 6 skins Official app store listing still receives fresh content updates",
+          "source_label": "Kingshot Apple App Store",
+          "source_url": "https://apps.apple.com/us/app/kingshot/id6739554056"
+        },
+        {
+          "date": "2026-05-14",
+          "title": "4 code entries still appear in the tracked source",
+          "summary": "VIP777 is the strongest current first-check candidate. Keep retest tags on newer or ambiguous entries.",
+          "source_label": "Kingshot.net gift-code tracker",
+          "source_url": "https://www.kingshot.net/gift-codes"
+        }
+      ],
+      "practical_notes": [
+        "Codes are still the fastest repeat-open reason for returning players.",
+        "If there is no strong event overlap, default to holding premium resources.",
+        "Write one account gate into the memo so tomorrow's login has direction."
+      ]
+    }
+  }
+}

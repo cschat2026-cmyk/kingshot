@@ -1,0 +1,54 @@
+Kingshot Central launch QA report
+
+Checked on
+- 2026-05-14
+
+Public pages checked
+- index.html
+- guides/codes.html
+- guides/today.html
+- guides/hero-meta.html
+- guides/event-core.html
+- guides/building-planner.html
+- guides/alliance-ops.html
+- guides/event-rhythm.html
+- guides/beginner-growth.html
+- guides/sources-contact.html
+- guides/privacy.html
+
+Automated checks passed
+- All JavaScript files pass node --check.
+- scripts/update-live-feed.mjs runs and refreshes data/live-feed.json, site-data.js, and data/update-log.txt.
+- No missing local CSS, JS, image, txt, or HTML references were found across public HTML pages.
+- No missing same-page anchor targets were found.
+- No suspicious public buttons without matching script handlers were found.
+- No old site-strategy.html public page remains.
+- No public HTML/JS contains the earlier internal content-direction page text.
+- No public HTML/JS contains the previous ad-placement planning copy such as "ad slot placement", "300x600", or "recommended placement".
+- AdSense publisher script is present on all public pages.
+- ads.txt, robots.txt, sitemap.xml, privacy policy, sources/contact page, footer contact links, and structured data are present.
+
+Interactive features covered by code checks
+- Homepage tool search filters.
+- Homepage daily checklist reset and local saving.
+- Homepage hold/prep/spend decision buttons.
+- Homepage note local saving.
+- Homepage copy-code buttons rendered from current code data.
+- Codes page mark-as-checked button.
+- Codes page copy buttons.
+- Today page refresh-feed button and auto-refresh of data/live-feed.json.
+- Today page memo local saving.
+- Hero page pull decision helper and local saving.
+- Event page spend decision helper and local saving.
+- Building page planning target selector.
+- Building page upgrade gate helper and local saving.
+- Building page local planner note.
+- Alliance checklist reset and local saving.
+- Footer email, sources/contact, privacy, X share, and Reddit share links.
+
+Remaining honest risks
+- This is competitive for a static launch, but not guaranteed to beat mature utility sites until more real data is added.
+- The biggest next competitive upgrade is a verified hero gear or building requirement calculator using player screenshots and confirmed values.
+- AdSense manual ad unit slot IDs are still blank in ads-config.js, so Auto Ads/publisher review can load, but manually placed ad containers stay hidden until slot IDs are added.
+- Search Console and Bing verification tokens are placeholders because real tokens must come from your accounts.
+- Final domain is still set as https://www.kingshotcentral.com in canonical URLs, sitemap.xml, robots.txt, and site-config.js. Replace it if your real domain differs.

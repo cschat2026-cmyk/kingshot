@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Allow: /data/live-feed.json
+Disallow: /data/app-store-lookup.json
+Disallow: /data/google-play-kingshot.html
+Disallow: /data/kingshot-gift-codes.html
+Disallow: /data/kingshot-redeem.html
+Disallow: /data/sources.json
+Disallow: /data/update-log.txt
+Disallow: /scripts/
+
+Sitemap: https://www.kingshotcentral.com/sitemap.xml

@@ -1,0 +1,10 @@
+Mobile feature checklist
+
+Checked items to keep on the radar while reviewing small-screen behavior:
+- Today page works without fetch and still renders when opened as local files
+- Locale switcher should remain visible and tappable on narrow screens
+- Mobile dock should not cover critical CTA buttons or textarea fields
+- Codes copy buttons should stay full-width and easy to tap
+- Building planner select box should remain readable and not overflow
+- Textareas on Today and Building Planner should keep enough height above the mobile dock
+- Home tool search chips should scroll horizontally rather than wrap awkwardly

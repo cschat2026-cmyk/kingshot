@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kingshot Building Planner</title>
+    <meta
+      name="description"
+      content="Kingshot building and furnace planning guide with upgrade-gate logic, saved notes, and practical queue priorities."
+    />
+    <link rel="canonical" href="https://www.kingshotcentral.com/guides/building-planner.html" />
+    <meta property="og:title" content="Kingshot Building Planner" />
+    <meta property="og:description" content="Plan Kingshot building queues around furnace gates, support buildings, event timing, and local notes." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.kingshotcentral.com/guides/building-planner.html" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oxanium:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2456404542897668"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body data-page="building">
+    <div class="page-shell guide-layout" data-building-planner>
+      <a class="back-link" href="../index.html" data-i18n="shared.backToHome">Back to Kingshot Central</a>
+      <article class="intro-card">
+        <p class="eyebrow" data-i18n="building.introEyebrow">Building guide</p>
+        <h1 data-i18n="building.introTitle">Kingshot building planner and furnace focus</h1>
+        <p data-i18n="building.introBody">
+          Use this page to decide which building chain should take your next queue, which support buildings matter, and what to write down before the next reset or event window.
+        </p>
+      </article>
+
+      <article class="today-card">
+        <p class="section-kicker" data-i18n="building.selectGoal">Select your current goal</p>
+        <div class="planner-controls">
+          <label class="planner-label" for="goal-select" data-i18n="building.planningTarget">Planning target</label>
+          <select id="goal-select" class="planner-select">
+            <option value="furnace" data-i18n="building.goals.0">Push next furnace or town center gate</option>
+            <option value="heroes" data-i18n="building.goals.1">Prepare for next hero event</option>
+            <option value="economy" data-i18n="building.goals.2">Stabilize economy and bottlenecks</option>
+          </select>
+        </div>
+        <div class="planner-result">
+          <h2 id="planner-result-title" data-i18n="building.planResults.furnace.title">Furnace push plan</h2>
+          <p id="planner-result-details" data-i18n="building.planResults.furnace.details">
+            Prioritize your main level gate, gather the exact prerequisite chain in advance, and avoid side upgrades that do not unlock the next meaningful breakpoint.
+          </p>
+        </div>
+      </article>
+
+      <section class="ad-slot ad-inline" aria-label="Advertisement" data-ad-slot="building_inline_top" data-ad-format="auto" hidden>
+        <span class="ad-slot-label" data-i18n="shared.adLabel">Advertisement</span>
+        <div class="ad-slot-inner"></div>
+      </section>
+
+      <div class="split">
+        <article>
+          <h2 data-i18n="building.priorityTitle">Priority mindset</h2>
+          <ul>
+            <li data-i18n="building.priorityItems.0">Center account planning around your main level gate and its prerequisites.</li>
+            <li data-i18n="building.priorityItems.1">Push buildings that unlock troop quality, research throughput, or event efficiency.</li>
+            <li data-i18n="building.priorityItems.2">Delay decorative or marginal upgrades that do not change account momentum.</li>
+            <li data-i18n="building.priorityItems.3">Always think one level ahead so you are not surprised by blocked requirements.</li>
+          </ul>
+        </article>
+
+        <article>
+          <h2 data-i18n="building.userNeedTitle">Check these before you start a long upgrade</h2>
+          <ul>
+            <li data-i18n="building.userNeedItems.0">What blocks the next furnace or Town Center jump.</li>
+            <li data-i18n="building.userNeedItems.1">Which support building actually unlocks troop, research, or event value.</li>
+            <li data-i18n="building.userNeedItems.2">Whether the upgrade should finish during an event window instead of today.</li>
+            <li data-i18n="building.userNeedItems.3">What resource or prerequisite will stall the next queue if you ignore it now.</li>
+          </ul>
+        </article>
+      </div>
+
+      <article class="today-card building-gate-tool">
+        <div class="section-head compact-section-head">
+          <div>
+            <p class="section-kicker" id="gate-tool-kicker">Upgrade gate helper</p>
+            <h2 id="gate-tool-title">Pick what is blocking you now</h2>
+          </div>
+          <span class="memo-status" id="gate-tool-status">Saved locally</span>
+        </div>
+        <div class="planner-controls planner-controls-grid">
+          <label class="planner-label" for="current-phase">Current account phase</label>
+          <select id="current-phase" class="planner-select">
+            <option value="early">Early account</option>
+            <option value="mid">Mid account</option>
+            <option value="late">Mature account</option>
+          </select>
+
+          <label class="planner-label" for="current-blocker">Main blocker</label>
+          <select id="current-blocker" class="planner-select">
+            <option value="main">Main level prerequisite</option>
+            <option value="military">Troop or military unlock</option>
+            <option value="research">Research throughput</option>
+            <option value="resource">Resource shortage</option>
+          </select>
+        </div>
+        <div class="planner-result gate-result">
+          <h3 id="gate-result-title">Build toward the main prerequisite chain first.</h3>
+          <p id="gate-result-body">Keep one queue pointed at the next hard gate and use the second queue only for supports that unblock it.</p>
+        </div>
+      </article>
+
+      <article>
+        <h2 data-i18n="building.tableTitle">High-value building paths</h2>
+        <div class="planner-table">
+          <div class="planner-row planner-head">
+            <span data-i18n="building.tableHead.0">Main goal</span>
+            <span data-i18n="building.tableHead.1">Key supports</span>
+            <span data-i18n="building.tableHead.2">Reason to care</span>
+          </div>
+          <div class="planner-row">
+            <span data-i18n="building.tableRows.0.0">Push Town Center or Furnace milestone</span>
+            <span data-i18n="building.tableRows.0.1">Wall, economy supports, military chain</span>
+            <span data-i18n="building.tableRows.0.2">Unlocks future account level and keeps queue value concentrated.</span>
+          </div>
+          <div class="planner-row">
+            <span data-i18n="building.tableRows.1.0">Prepare next hero or troop event window</span>
+            <span data-i18n="building.tableRows.1.1">Research and training supports</span>
+            <span data-i18n="building.tableRows.1.2">Improves your ability to convert held resources into points.</span>
+          </div>
+          <div class="planner-row">
+            <span data-i18n="building.tableRows.2.0">Stabilize mid-game progress</span>
+            <span data-i18n="building.tableRows.2.1">Only the buildings that unblock future growth</span>
+            <span data-i18n="building.tableRows.2.2">Stops the account from wasting days on low-impact upgrades.</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="note-card">
+        <h2 data-i18n="building.noteGuideTitle">How to use this page correctly</h2>
+        <p data-i18n="building.noteGuideBody">
+          Do not ask which building looks weakest. Ask which building is blocking your next real
+          account breakpoint. That one change in thinking saves more queue time than almost any
+          micro-optimization. If a building does not unlock future growth, troop quality, research
+          speed, or event conversion, it should usually wait.
+        </p>
+      </article>
+
+      <section class="ad-slot ad-inline ad-mobile-only" aria-label="Advertisement" data-ad-slot="building_mobile_inline" data-ad-format="auto" hidden>
+        <span class="ad-slot-label" data-i18n="shared.adLabel">Advertisement</span>
+        <div class="ad-slot-inner"></div>
+      </section>
+
+      <article class="today-section memo-section">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker" data-i18n="building.noteKicker">Local planner note</p>
+            <h2 data-i18n="building.noteTitle">Your next bottleneck</h2>
+          </div>
+          <span class="memo-status" id="planner-note-status" data-i18n="building.noteStatus">Saved locally</span>
+        </div>
+        <textarea
+          id="planner-note"
+          class="memo-field"
+          data-i18n-placeholder="building.notePlaceholder"
+          placeholder="Write your current furnace level, blocked building, missing resources, or next timed event here."
+        ></textarea>
+      </article>
+    </div>
+    <script src="../site-config.js"></script>
+    <script src="../i18n.js"></script>
+    <script src="../planner.js"></script>
+    <script src="../ads-config.js"></script>
+    <script src="../ads.js"></script>
+    <script src="../site-schema.js"></script>
+    <script src="../site-footer.js"></script>
+  </body>
+</html>

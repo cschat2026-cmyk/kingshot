@@ -1,0 +1,28 @@
+Kingshot Central launch checklist and free promotion plan
+
+Domain setup
+- Replace https://www.kingshotcentral.com in sitemap.xml, robots.txt, and site-config.js if the final domain is different.
+- Upload ads.txt to the site root so it is reachable at https://your-domain.com/ads.txt.
+- Submit https://your-domain.com/sitemap.xml in Google Search Console and Bing Webmaster Tools.
+- Add Google Search Console and Bing verification tokens to site-config.js when the real tokens are available, then add the matching meta tags if required by the console.
+- Keep Privacy, Sources and Contact, and footer feedback links reachable from every page before applying for AdSense review.
+
+Daily auto-update plan
+- The site already refreshes data/live-feed.json in the browser when Today in Kingshot opens.
+- The GitHub Actions workflow can refresh data/live-feed.json and site-data.js every 6 hours if the site is hosted from a GitHub repository.
+- Keep official source tracking conservative: confirmed active, retest first, or expired/stale.
+
+Free promotion channels
+- Post short code-update tweets whenever a new code is confirmed: include code, expiry if known, redeem link, and one screenshot.
+- Share the code board and Today page in Reddit threads only when answering a real player question; avoid spam-style link drops.
+- Share alliance checklist and building planner in Discord alliance chats as a utility, not as a generic article.
+- Create simple repeatable posts: "Today's Kingshot check: codes, reset, hold/spend call, next building gate."
+- Ask players to email missing codes or wrong event notes via the footer contact link.
+- Use Reddit carefully: answer the actual player question first, then link the exact tool page. Avoid dropping the homepage without context.
+- Use Discord alliance channels for the checklist and codes board; those are more naturally shareable than broad articles.
+
+Content quality rules
+- Homepage must answer useful player questions immediately: current codes, reset/today watch, hold-or-spend, and next bottleneck.
+- Avoid internal wording such as traffic, monetization, ad inventory, content model, and strategy moat on public pages.
+- Every code entry should be labeled as confirmed, retest, stale, or expired.
+- If a source is ambiguous, say so clearly instead of pretending it is verified.

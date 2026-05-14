@@ -1,0 +1,28 @@
+{
+  "timezone": "Asia/Shanghai",
+  "server_reset_utc_hour": 0,
+  "official_sources": [
+    {
+      "name": "Kingshot Official Facebook",
+      "type": "social",
+      "url": "https://www.facebook.com/61560003321785/",
+      "notes": "Watch for maintenance, milestone gift codes, and event announcements."
+    },
+    {
+      "name": "Kingshot Apple App Store",
+      "type": "app_store",
+      "url": "https://apps.apple.com/us/app/kingshot/id6739554056",
+      "notes": "Useful fallback for patch-note style updates and version changes."
+    }
+  ],
+  "update_targets": [
+    "live-feed.json",
+    "update-log.txt"
+  ],
+  "editorial_rules": [
+    "Keep focus items short and immediately actionable.",
+    "Use exact dates in official update entries.",
+    "If a code is not confirmed active, say watchlist or verification pending.",
+    "Surface only high-signal changes on the homepage."
+  ]
+}

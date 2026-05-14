@@ -1,0 +1,13 @@
+2026-05-13 10:00 Asia/Shanghai | Bootstrapped live feed data for Today in Kingshot.
+2026-05-13 10:15 Asia/Shanghai | Added live update pipeline plan with sources and manual editorial guardrails.
+2026-05-13 10:10 Asia/Shanghai | Refreshed live-feed.json from sources.json.
+2026-05-13 10:10 Asia/Shanghai | Refreshed live-feed.json from sources.json.
+2026-05-13 17:29 Asia/Shanghai | Refreshed live-feed.json and site-data.js from App Store + tracked codes.
+2026-05-13 17:32 Asia/Shanghai | Refreshed live-feed.json and site-data.js from App Store + tracked codes.
+2026-05-13 17:33 Asia/Shanghai | Refreshed live-feed.json and site-data.js from App Store + tracked codes.
+2026-05-13 17:35 Asia/Shanghai | Refreshed live-feed.json and site-data.js from App Store + tracked codes.
+2026-05-13 17:36 Asia/Shanghai | Refreshed live-feed.json and site-data.js from App Store + tracked codes.
+2026-05-13 17:53 Asia/Shanghai | Refreshed live-feed.json and site-data.js from App Store + tracked codes.
+2026-05-14 11:07 Asia/Shanghai | Refreshed live-feed.json and site-data.js from App Store + tracked codes.
+2026-05-14 11:16 Asia/Shanghai | Refreshed live-feed.json and site-data.js from App Store + tracked codes.
+2026-05-14 11:44 Asia/Shanghai | Refreshed live-feed.json and site-data.js from App Store + tracked codes.
