@@ -9,4 +9,4 @@ Disallow: /data/sources.json
 Disallow: /data/update-log.txt
 Disallow: /scripts/
 
-Sitemap: https://www.kingshotcentral.com/sitemap.xml
+Sitemap: https://kings20.top/sitemap.xml

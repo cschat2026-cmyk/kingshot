@@ -1,7 +1,7 @@
 (() => {
   const config = window.KINGSHOT_SITE_CONFIG || {};
   const siteName = config.siteName || "Kingshot Central";
-  const siteUrl = (config.siteUrl || "https://www.kingshotcentral.com").replace(/\/$/, "");
+  const siteUrl = (config.siteUrl || "https://kings20.top").replace(/\/$/, "");
   const contactEmail = config.contactEmail || "cschat2026@gmail.com";
   const path = window.location.pathname || "/";
   const pageUrl = path.includes("/guides/")

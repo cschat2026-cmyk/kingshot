@@ -1,7 +1,7 @@
 Kingshot Central launch checklist and free promotion plan
 
 Domain setup
-- Replace https://www.kingshotcentral.com in sitemap.xml, robots.txt, and site-config.js if the final domain is different.
+- Final public domain is https://kings20.top. Keep sitemap.xml, robots.txt, canonical URLs, schema, and social preview URLs aligned to this host.
 - Upload ads.txt to the site root so it is reachable at https://your-domain.com/ads.txt.
 - Submit https://your-domain.com/sitemap.xml in Google Search Console and Bing Webmaster Tools.
 - Add Google Search Console and Bing verification tokens to site-config.js when the real tokens are available, then add the matching meta tags if required by the console.

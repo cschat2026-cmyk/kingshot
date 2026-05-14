@@ -51,4 +51,4 @@ Remaining honest risks
 - The biggest next competitive upgrade is a verified hero gear or building requirement calculator using player screenshots and confirmed values.
 - AdSense manual ad unit slot IDs are still blank in ads-config.js, so Auto Ads/publisher review can load, but manually placed ad containers stay hidden until slot IDs are added.
 - Search Console and Bing verification tokens are placeholders because real tokens must come from your accounts.
-- Final domain is still set as https://www.kingshotcentral.com in canonical URLs, sitemap.xml, robots.txt, and site-config.js. Replace it if your real domain differs.
+- Final domain is set as https://kings20.top in canonical URLs, sitemap.xml, robots.txt, and site-config.js.
